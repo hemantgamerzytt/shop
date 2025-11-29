@@ -1,0 +1,37 @@
+/* Animated Light Blue Order Button */
+.order-button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #7dd3fc; /* Light blue base */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  transition: 0.3s;
+}
+
+.order-button:hover {
+  box-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8, 0 0 60px #38bdf8;
+  background: #38bdf8;
+}
+
+/* Glow animation keyframes */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc;
+    background: #7dd3fc;
+  }
+  50% {
+    box-shadow: 0 0 15px #38bdf8, 0 0 30px #38bdf8, 0 0 45px #38bdf8;
+    background: #38bdf8;
+  }
+  100% {
+    box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc;
+    background: #7dd3fc;
+  }
+}

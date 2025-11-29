@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HemantGamerzYT Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://i.postimg.cc/SR3H1qrW/minecraft-minecraft-dungeons-ocean-view-minecraft-dungeons-hidden-depths-4k-hd-wallpaper-preview.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      position: relative;
+      min-height: 100vh;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo .logo-img { height: 50px; width: auto; display: block; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+    nav ul li a { color: #ffffff; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav ul li a:hover { color: #38bdf8; }
+    section { padding: 4rem 2rem; text-align: center; }
+    section h2 { font-size: 2.5rem; margin-bottom: 2rem; color: #7dd3fc; }
+    .server-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+    .card {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 250px;
+      transition: transform 0.3s, background 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card:hover { transform: scale(1.05); background: rgba(0, 0, 0, 0.7); }
+    .order-button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #7dd3fc;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc;
+      animation: glow 1.5s ease-in-out infinite alternate;
+      transition: 0.3s;
+    }
+    .order-button:hover {
+      box-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8, 0 0 60px #38bdf8;
+      background: #38bdf8;
+    }
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc; background: #7dd3fc; }
+      50% { box-shadow: 0 0 15px #38bdf8, 0 0 30px #38bdf8, 0 0 45px #38bdf8; background: #38bdf8; }
+      100% { box-shadow: 0 0 5px #7dd3fc, 0 0 10px #7dd3fc, 0 0 15px #7dd3fc; background: #7dd3fc; }
+    }
+    .welcome-section {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #ffffff;
+      background: rgba(0,0,0,0.4);
+      border-radius: 1rem;
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+    .welcome-section h1 {
+      font-size: 3rem;
+      color: #7dd3fc;
+      margin-bottom: 1rem;
+      animation: glow-text 2s ease-in-out infinite alternate;
+    }
+    .welcome-section p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
+    .feature {
+      background: rgba(0,0,0,0.5);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 250px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .feature:hover { transform: scale(1.05); background: rgba(0,0,0,0.7); }
+    @keyframes glow-text {
+      0% { text-shadow: 0 0 5px #38bdf8, 0 0 10px #38bdf8, 0 0 20px #38bdf8; }
+      50% { text-shadow: 0 0 15px #7dd3fc, 0 0 30px #7dd3fc, 0 0 45px #7dd3fc; }
+      100% { text-shadow: 0 0 5px #38bdf8, 0 0 10px #38bdf8, 0 0 20px #38bdf8; }
+    }
+    footer { padding: 1rem; text-align: center; background: rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="#home">
+        <img src="https://i.postimg.cc/pr5nMYfP/Picsart-25-08-21-20-48-15-159-1.jpg" alt="HemantGamerzYT Logo" class="logo-img">
+      </a>
+    </div>
+    <ul></ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section" id="welcome">
+    <h1>Welcome to HemantGamerzYT</h1>
+    <p>Your one-stop solution for Minecraft servers, Discord setups, bots, and web development.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>🎨 Professional Design</h3>
+        <p>Clean UI and animations for every project, designed to look great on all devices.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 24/7 Support</h3>
+        <p>Our team is always available to help you with setup, optimization, or maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minecraft Servers Section -->
+  <section class="servers-section" id="minecraft">
+    <h2>Minecraft Server Setup</h2>
+    <div class="server-cards">
+      <div class="card">
+        <h3>PVP Server Setup</h3>
+        <p>Price: 1200</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Survival Server Setup</h3>
+        <p>Price: 1200</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Arcade Server Setup</h3>
+        <p>Price: 1200</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Bedwars Server Setup</h3>
+        <p>Price: 1200</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Skywars Server Setup</h3>
+        <p>Price: 1200</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website & Discord Bot Section -->
+  <section class="servers-section" id="services">
+    <h2>Website & Discord Bot Services</h2>
+    <div class="server-cards">
+      <div class="card">
+        <h3>Normal Discord Bot (Music & Welcome)</h3>
+        <p>Price: 599</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Custom Discord Bot</h3>
+        <p>Price: 1199</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Normal Website</h3>
+        <p>Price: 1300</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>Custom Website</h3>
+        <p>Price: 1999</p>
+        <a class="order-button" href="https://discord.gg/RQZGSRXV5X" target="_blank">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HemantGamerzYT. All rights reserved.</p>
+  </footer>
+</body>
+</html>
